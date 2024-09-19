@@ -21,7 +21,6 @@ load_dotenv()
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 OPENAI_API_KEY="sk--wgT5Os0yh65yiaLY39ycJii98y9zQ6Y4alSi4dQ48T3BlbkFJHZHitsUUCDO48X3MDSWMFdtpeotEy71XvyQMBpf8cA"
-ANTHROPIC_API_KEY="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"
 
 
 def initialize_rag(csv_file: str):
