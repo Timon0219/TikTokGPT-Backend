@@ -1,0 +1,9 @@
+fastapi 
+uvicorn 
+langflow 
+openai 
+anthropic 
+SQLAlchemy 
+python-dotenv
+scikit-learn
+numpy
