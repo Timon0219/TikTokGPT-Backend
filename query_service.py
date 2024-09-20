@@ -17,10 +17,9 @@ import datetime
 import time
 load_dotenv()
 
-# # API keys for RAG services
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-OPENAI_API_KEY='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'
+# API keys for RAG services
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 
 def initialize_rag(csv_file: str):
@@ -69,11 +68,8 @@ def calculate_relevancy_score(question, answer, faiss_score):
 
 # Function to simulate logging engagement (for demonstration)
 def log_engagement(request_time, relevancy_score):
-    # Increment total queries
     metrics["total_queries"] += 1
-    # Track total query time
     metrics["total_query_time"] += request_time
-    # Add relevancy score to the list
     metrics["relevancy_scores"].append(relevancy_score)
     print(f"Metrics Updated: Total Queries = {metrics['total_queries']}, Avg Query Time = {metrics['total_query_time'] / metrics['total_queries']}")
 
