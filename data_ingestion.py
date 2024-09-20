@@ -12,17 +12,14 @@ if os.path.exists('tiktok.db'):
 
 Base = declarative_base()
 
-# Create an engine
 engine = create_engine(DATABASE_URL)
 
-# Create all tables in the database
 Base.metadata.create_all(engine)
 
 # Create a session
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Load the CSV file into a DataFrame
 df = pd.read_csv('data.csv', encoding='latin1')
 
 # Add data to the database
