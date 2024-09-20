@@ -18,9 +18,9 @@ import time
 load_dotenv()
 
 # # API keys for RAG services
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
-# OPENAI_API_KEY='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'
+OPENAI_API_KEY='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'
 
 
 def initialize_rag(csv_file: str):
